@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SearchDuckDuckGo" parallel="tests">
+    <test name="SearchTestJAVA">
+        <parameter name="searchText" value="JAVA"/>
+        <classes>
+            <class name="com.searchduckduckgo.test.SearchTest">
+                <methods>
+                    <include name="GoToApplicationTest"/>
+                    <include name="SearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SearchTestSelenium">
+        <parameter name="searchText" value="Selenium"/>
+        <classes>
+            <class name="com.searchduckduckgo.test.SearchTest">
+                <methods>
+                    <include name="GoToApplicationTest"/>
+                    <include name="SearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SearchTestDocker">
+        <parameter name="searchText" value="Docker"/>
+        <classes>
+            <class name="com.searchduckduckgo.test.SearchTest">
+                <methods>
+                    <include name="GoToApplicationTest"/>
+                    <include name="SearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="SearchTestJS">
+        <parameter name="searchText" value="JS"/>
+        <classes>
+            <class name="com.searchduckduckgo.test.SearchTest">
+                <methods>
+                    <include name="GoToApplicationTest"/>
+                    <include name="SearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
